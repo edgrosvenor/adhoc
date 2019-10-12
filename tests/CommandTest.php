@@ -1,16 +1,13 @@
 <?php
 
-namespace Tupleauth\Tests;
+namespace Adhoc\Tests;
+
 
 class CommandTest extends TestCase
 {
     /** @test */
-    public function is_login_alive()
+    public function can_accept_adhoc_input()
     {
-        $response = $this->get('/login');
-
-        dump($response->exception);
-
-        $response->assertSuccessful();
+        $this->artisan('test:command this=that --happy');
     }
 }

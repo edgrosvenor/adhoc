@@ -1,9 +1,9 @@
 <?php
 
-namespace Tupleauth\Tests;
+namespace Adhoc\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Tupleauth\TupleauthServiceProvider;
+use Adhoc\AdhocServiceProvider;
 
 class TestCase extends BaseTestCase
 {
@@ -15,7 +15,7 @@ class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            TupleauthServiceProvider::class,
+            AdhocServiceProvider::class,
         ];
     }
 
