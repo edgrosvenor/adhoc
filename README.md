@@ -1,7 +1,8 @@
+# NOT YET READY
 # Ad Hoc Options and Arguments for Laravel Commands
 
 Allows the use of arguments and options in Laravel commands that are not defined in the signature. I'm not sure why
- you would ever want this. I know why I wanted it, but I'm reckless and unstable. So use at your own risk.
+ you would ever want this. I know why I wanted it, but I'm reckless. So use at your own risk.
  
  `composer require edgrosvenor/adhoc`
  
