@@ -9,13 +9,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class Command extends BaseCommand
 {
-    public $arguments;
-    public $options;
+    public $_adhoc;
 
     public function __construct()
     {
         parent::__construct();
-
+        $this->_adhoc = [];
         $this->ignoreValidationErrors();
     }
 
@@ -31,6 +30,7 @@ class Command extends BaseCommand
             if (preg_match('/=/', $arg)) {
                 list($k, $v) = explode('=', str_replace("'", '', $arg));
                 $this->$k = $v;
+                array_push($this->_adhoc, $k);
             }
         }
 
