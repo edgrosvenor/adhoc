@@ -3,7 +3,6 @@
 namespace Adhoc;
 
 use Adhoc\Commands\TestCommand;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class AdhocServiceProvider extends ServiceProvider

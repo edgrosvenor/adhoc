@@ -2,7 +2,6 @@
 
 namespace Adhoc\Tests;
 
-
 class CommandTest extends TestCase
 {
     /** @test */

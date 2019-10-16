@@ -2,8 +2,8 @@
 
 namespace Adhoc\Tests;
 
-use Orchestra\Testbench\TestCase as BaseTestCase;
 use Adhoc\AdhocServiceProvider;
+use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
