@@ -1,4 +1,7 @@
 # Ad Hoc Arguments for Laravel Commands
+![StyleCI](https://github.styleci.io/repos/214572606/shield?branch=master)
+![ChipperCI](https://app.chipperci.com/projects/21f89407-1fb4-468c-9c3e-c4661ae0dc89/status/master)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/edgrosvenor/adhoc.svg?style=flat-square)](https://packagist.org/packages/edgrosvenor/adhoc)
 
 Allows the use of arguments in Laravel commands that are not defined in the signature. I'm not sure why
  you would ever want this. I know why I wanted it, but I'm reckless. So use at your own risk.
