@@ -8,10 +8,10 @@ class TestCommand extends Command
 {
     protected $signature = 'test:command';
 
+
     public function handle()
     {
-        dump($this->arguments());
-        dump($this->options());
-        dd("done");
+        $this->info('The sky is ' . $this->sky);
+        $this->info('My favorite color is ' . $this->color);
     }
 }
