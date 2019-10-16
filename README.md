@@ -20,11 +20,15 @@ Create your commands as normal, but have them extend Adhoc\Command instead. Then
  the command will set as attributes on the command object. So for instance, if you do:
  
  ```bash
-php artisan do:something adhoc=fun
+php artisan do:something packages=fun
 ```
 where adhoc is not in the signature of the command, in the execute method you can access it like this:
 ```php
-$this->adhoc; // fun
+$this->packages; // fun
+```
+and you can access an array of the arguments passed like so:
+```php
+$this->_adhoc; // ['packages']
 ```
 
 ## Todo
