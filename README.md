@@ -5,10 +5,7 @@
 
 Allows the use of arguments in Laravel commands that are not defined in the signature. I'm not sure why
  you would ever want this. I know why I wanted it, but I'm reckless. So use at your own risk.
- 
- `composer require edgrosvenor/adhoc`
- 
- 
+
 ## Installation
 
 You can install the package via composer:
@@ -22,7 +19,7 @@ composer require edgrosvenor/adhoc
 Create your commands as normal, but have them extend Adhoc\Command instead. Then any arguments you send to
  the command will set as attributes on the command object. So for instance, if you do:
  
- ```php
+ ```bash
 php artisan do:something adhoc=fun
 ```
 where adhoc is not in the signature of the command, in the execute method you can access it like this:
