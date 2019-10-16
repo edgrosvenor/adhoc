@@ -9,6 +9,7 @@ class CommandTest extends TestCase
     {
         $this->artisan('test:command color=red sky=blue')
             ->expectsOutput('The sky is blue')
-            ->expectsOutput('My favorite color is red');
+            ->expectsOutput('My favorite color is red')
+            ->expectsOutput('color,sky');
     }
 }

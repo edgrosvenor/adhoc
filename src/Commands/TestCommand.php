@@ -12,5 +12,6 @@ class TestCommand extends Command
     {
         $this->info('The sky is '.$this->sky);
         $this->info('My favorite color is '.$this->color);
+        $this->info(join(',', $this->_adhoc));
     }
 }
